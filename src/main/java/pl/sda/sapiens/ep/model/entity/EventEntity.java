@@ -30,6 +30,7 @@ public class EventEntity {
     @Column(nullable = false)
     private LocalDateTime end;
     //NIE ZAPISUJEMY KODU
-    private transient List<String> tags;
+    @ManyToMany
+    private List<TagEntity> tags;
 
 }
