@@ -15,7 +15,7 @@ class HibernateEventRepository implements EventRepository {
 
 
     private final EntityManager entityManager;
-    private EntityTransaction transaction;
+    private final EntityTransaction transaction;
 
     HibernateEventRepository(SessionFactory sessionFactory) {
         entityManager = sessionFactory.createEntityManager();
