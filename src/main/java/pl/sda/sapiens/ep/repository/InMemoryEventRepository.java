@@ -17,7 +17,7 @@ public class InMemoryEventRepository implements EventRepository{
                         .description("Tworzenie applikacji REST, SOAP")
                         .start(LocalDateTime.of(2022,06,16,10,00,00))
                         .end(LocalDateTime.of(2022,06,18,10,00,00))
-                        .tags(List.of("programming", "session", "Java", "web"))
+//                        .tags(List.of("programming", "session", "Java", "web"))
                         .build()
         );
         save(
@@ -26,7 +26,7 @@ public class InMemoryEventRepository implements EventRepository{
                         .description("Powtórka materiału")
                         .start(LocalDateTime.of(2022,06,11,10,00,00))
                         .end(LocalDateTime.of(2022,06,12,10,00,00))
-                        .tags(List.of("programming", "session", "Java"))
+//                        .tags(List.of("programming", "session", "Java"))
                         .build()
         );
         save(
@@ -35,7 +35,7 @@ public class InMemoryEventRepository implements EventRepository{
                         .description("Projekt")
                         .start(LocalDateTime.of(2022,06,23,10,00,00))
                         .end(LocalDateTime.of(2022,06,28,10,00,00))
-                        .tags(List.of("programming", "session", "Java", "project", "web"))
+//                        .tags(List.of("programming", "session", "Java", "project", "web"))
                         .build()
         );
     }

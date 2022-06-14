@@ -22,6 +22,8 @@ public class HibernatTagRepository implements TagRepository{
     @Override
     public boolean saveIfNotPresent(String tag) {
        transaction.begin();
-       entityManager.persist(new TagEntity(0,tag, ));
+       entityManager.persist(new TagEntity(0,tag, null ));
+       transaction.commit();
+       return true;
     }
 }

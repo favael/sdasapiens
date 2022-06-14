@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import pl.sda.sapiens.ep.model.entity.EventEntity;
+import pl.sda.sapiens.ep.model.entity.TagEntity;
 
 @Configuration
 class SpringConfiguration {
@@ -17,7 +18,8 @@ class SpringConfiguration {
     public LocalSessionFactoryBean getSessionFactory() {
         LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
         factoryBean.setConfigLocation(context.getResource("classpath:hibernate.cfg.xml"));
-        factoryBean.setAnnotatedClasses(EventEntity.class);
+        factoryBean.setAnnotatedClasses(EventEntity.class, TagEntity.class);
+
         return factoryBean;
     }
 }
