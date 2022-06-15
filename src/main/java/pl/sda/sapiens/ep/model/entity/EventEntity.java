@@ -13,10 +13,10 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 @ToString
-@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity(name = "event")
 @Table(name = "events")
 public class EventEntity {
+
 
     @EqualsAndHashCode.Include
     @Id

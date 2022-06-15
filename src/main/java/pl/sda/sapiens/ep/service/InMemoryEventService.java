@@ -40,12 +40,12 @@ public class InMemoryEventService implements EventService{
         eventRepository.save(entity);
 
         for (String tag : eventForm.getTags()) {
-            saveTag(tag);
+            saveTag(tag, entity);
         }
     }
 
-    private void saveTag(String tag) {
-        tagRepository.saveIfNotPresent(tag);
+    private void saveTag(String tag, EventEntity event) {
+        tagRepository.saveIfNotPresent(tag,event);
     }
 
     @Override

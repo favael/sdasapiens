@@ -1,6 +1,5 @@
 package pl.sda.sapiens.ep.repository;
 
-import org.springframework.stereotype.Repository;
 import pl.sda.sapiens.ep.model.entity.EventEntity;
 
 import java.time.LocalDateTime;
